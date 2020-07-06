@@ -1,0 +1,48 @@
+!SESSION 2020-07-06 13:37:57.470 -----------------------------------------------
+eclipse.buildId=Version 1.3.0
+java.version=1.8.0_242
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_AU
+Command-line arguments:  -data /home/moel/projects/STM32-projects/Embedded-C/instructor/target -os linux -ws gtk -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2020-07-06 13:38:01.186
+!MESSAGE Log4j initialized with config file /home/moel/projects/STM32-projects/Embedded-C/instructor/target/.metadata/.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 4 4 2020-07-06 13:38:02.378
+!MESSAGE com.st.stm32cube.ide.mcu.ide/META-INF/version/build_ref file not found, build reference will not be reported into properties
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2020-07-06 13:38:02.407
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-06 13:38:55.062
+!MESSAGE Indexed '001HelloWorld' (3 sources, 51 headers) in 1.17 sec: 2,044 declarations; 2,686 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-06 13:38:55.250
+!MESSAGE Indexed '010led_toggle_bitfields' (3 sources, 53 headers) in 0.185 sec: 2,000 declarations; 2,810 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-06 13:38:55.427
+!MESSAGE Indexed '005led_toggle' (3 sources, 52 headers) in 0.176 sec: 1,936 declarations; 2,748 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-06 13:38:55.584
+!MESSAGE Indexed '003Add' (3 sources, 51 headers) in 0.154 sec: 2,047 declarations; 2,690 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-06 13:38:55.739
+!MESSAGE Indexed '006pin_read' (3 sources, 52 headers) in 0.153 sec: 1,937 declarations; 2,752 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-06 13:38:55.885
+!MESSAGE Indexed '011keypad' (3 sources, 54 headers) in 0.144 sec: 2,081 declarations; 2,954 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-06 13:38:56.125
+!MESSAGE Indexed '009packed_Vsnonpacked' (3 sources, 51 headers) in 0.237 sec: 2,050 declarations; 2,706 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-06 13:38:56.267
+!MESSAGE Indexed '007volatile' (3 sources, 52 headers) in 0.14 sec: 1,933 declarations; 2,738 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-06 13:38:56.384
+!MESSAGE Indexed '002Sizeof' (3 sources, 51 headers) in 0.115 sec: 2,044 declarations; 2,691 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-06 13:38:56.497
+!MESSAGE Indexed '004led_on' (3 sources, 52 headers) in 0.111 sec: 1,934 declarations; 2,741 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-06 13:38:56.636
+!MESSAGE Indexed '008button_ISR' (3 sources, 54 headers) in 0.137 sec: 2,089 declarations; 2,917 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)

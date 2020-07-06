@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;ASCII/Debug/ASCII.exe&apos;" deleteContents="false" description="Delete resource &apos;ASCII/Debug/ASCII.exe&apos;" element1="/ASCII/Debug/ASCII.exe" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1594008116419"/>
+</session>
