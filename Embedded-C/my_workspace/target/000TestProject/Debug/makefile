@@ -39,8 +39,8 @@ OBJCOPY_BIN += \
 all: 000TestProject.elf secondary-outputs
 
 # Tool invocations
-000TestProject.elf: $(OBJS) $(USER_OBJS) /home/moel/projects/STM32-projects/Embedded-C/my_workspace/target/000TestProject/STM32F407VGTX_FLASH.ld
-	arm-none-eabi-gcc -o "000TestProject.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/moel/projects/STM32-projects/Embedded-C/my_workspace/target/000TestProject/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="000TestProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+000TestProject.elf: $(OBJS) $(USER_OBJS) E:\Projects\STM32-projects\Embedded-C\my_workspace\target\000TestProject\STM32F407VGTX_FLASH.ld
+	arm-none-eabi-gcc -o "000TestProject.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\Projects\STM32-projects\Embedded-C\my_workspace\target\000TestProject\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="000TestProject.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
