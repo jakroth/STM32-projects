@@ -1,7 +1,37 @@
-14:21:46 **** Incremental Build of configuration Debug for project 000TestProject ****
+14:05:04 **** Incremental Build of configuration Debug for project 002SizeOf ****
 make -j4 all 
-arm-none-eabi-size   000TestProject.elf 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -save-temps -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -save-temps -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -save-temps -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "002SizeOf.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Projects\STM32-projects\Embedded-C\my_workspace\target\002SizeOf\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="002SizeOf.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 002SizeOf.elf
+ 
+arm-none-eabi-objdump -h -S  002SizeOf.elf  > "002SizeOf.list"
+arm-none-eabi-size   002SizeOf.elf 
    text	   data	    bss	    dec	    hex	filename
-    676	      8	   1568	   2252	    8cc	000TestProject.elf
+   5248	    108	   1580	   6936	   1b18	002SizeOf.elf
+Finished building: default.size.stdout
+ 
+Finished building: 002SizeOf.list
+ 
+14:34:14 **** Incremental Build of configuration Debug for project 002SizeOf ****
+make -j4 all 
+arm-none-eabi-size   002SizeOf.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5248	    108	   1580	   6936	   1b18	002SizeOf.elf
+Finished building: default.size.stdout
+ 
+15:05:17 **** Incremental Build of configuration Debug for project 002SizeOf ****
+make -j4 all 
+arm-none-eabi-size   002SizeOf.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5248	    108	   1580	   6936	   1b18	002SizeOf.elf
+Finished building: default.size.stdout
+ 
+15:13:17 **** Incremental Build of configuration Debug for project 002SizeOf ****
+make -j4 all 
+arm-none-eabi-size   002SizeOf.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5248	    108	   1580	   6936	   1b18	002SizeOf.elf
 Finished building: default.size.stdout
  
