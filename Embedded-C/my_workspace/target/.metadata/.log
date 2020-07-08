@@ -1037,3 +1037,40 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:\Projects\STM3
 
 !ENTRY org.eclipse.cdt.core 1 0 2020-07-08 21:34:21.555
 !MESSAGE Indexed '004led_on' (3 sources, 52 headers) in 0.215 sec: 1,936 declarations; 2,749 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-08 22:01:26.138
+!MESSAGE Indexed '005led_spiral' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-08 22:01:27.964
+!MESSAGE Indexed '005led_spiral' (3 sources, 0 headers) in 0.046 sec: 67 declarations; 42 references; 10 unresolved inclusions; 0 syntax errors; 14 unresolved names (11%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-08 22:02:52.898
+!MESSAGE Indexed '005led_z_spiral' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-08 22:02:54.300
+!MESSAGE Indexed '005led_z_spiral' (3 sources, 49 headers) in 0.164 sec: 1,902 declarations; 2,539 references; 0 unresolved inclusions; 1 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-08 22:16:42.413
+!MESSAGE Indexed '006pin_read' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2020-07-08 22:16:44.230
+!MESSAGE Indexed '006pin_read' (3 sources, 0 headers) in 0.088 sec: 67 declarations; 42 references; 10 unresolved inclusions; 0 syntax errors; 14 unresolved names (11%)
+
+!ENTRY org.eclipse.jface 2 0 2020-07-08 22:29:13.763
+!MESSAGE Ignored reentrant call while viewer is busy. This is only logged once per viewer instance, but similar calls will still be ignored.
+!STACK 0
+java.lang.RuntimeException
+	at org.eclipse.jface.viewers.ColumnViewer.checkBusy(ColumnViewer.java:764)
+	at org.eclipse.jface.viewers.ColumnViewer.update(ColumnViewer.java:543)
+	at org.eclipse.ui.navigator.CommonViewer.update(CommonViewer.java:512)
+	at org.eclipse.jface.viewers.StructuredViewer.update(StructuredViewer.java:1965)
+	at org.eclipse.ui.internal.navigator.resources.nested.NestedProjectsLabelProvider.lambda$2(NestedProjectsLabelProvider.java:87)
+	at java.util.concurrent.CompletableFuture.uniAccept(CompletableFuture.java:670)
+	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:646)
+	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:488)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1609)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.exec(CompletableFuture.java:1596)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)

@@ -1,0 +1,10 @@
+22:35:00 **** Incremental Build of configuration Debug for project 006pin_read ****
+make -j4 all 
+arm-none-eabi-size   006pin_read.elf 
+   text	   data	    bss	    dec	    hex	filename
+    820	      8	   1568	   2396	    95c	006pin_read.elf
+Finished building: default.size.stdout
+ 
+
+22:35:01 Build Finished. 0 errors, 0 warnings. (took 792ms)
+
