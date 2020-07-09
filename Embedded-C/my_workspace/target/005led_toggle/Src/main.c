@@ -21,9 +21,9 @@
 
 int main(void)
 {
-	uint32_t *pClkCtrlReg = (uint32_t*) (0x40023800 + 0x30);
+	uint32_t *pClkCtrlReg 	= (uint32_t*) (0x40023800 + 0x30);
 	uint32_t *pPortDModeReg = (uint32_t*) (0x40020c00 + 0x00);
-	uint32_t *pPortDOutReg = (uint32_t*) (0x40020c00 + 0x14);
+	uint32_t *pPortDOutReg 	= (uint32_t*) (0x40020c00 + 0x14);
 
 	//1. ENABLE the CLOCK for GPIO D peripheral in AHB1 ENR, by setting bit 3 to "1"
 	*pClkCtrlReg |= (1 << 3);
@@ -37,7 +37,7 @@ int main(void)
 	*pPortDModeReg |= (1 << 24);
 
 
-	// 3. SET the OUTPUT DATA for GPIO D12 peripheral, but setting bit 12 to "1"
+	// 3. SET the OUTPUT DATA for GPIO D12 peripheral, by setting bit 12 to "1"
 	//*pPortDOutReg |= (1 << 12);
 	//*pPortDOutReg &= ~(1 << 12);		// reset bit 12 to 0
 

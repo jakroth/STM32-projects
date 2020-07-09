@@ -30,7 +30,7 @@ int main(void)
 	//*pClkCtrlReg &= !(1 << 3)
 
 
-	//2. SET the MODE for GPIO D12 peripheral, by setting bits 25,24 to "01"
+	//2. SET the MODE for GPIO D12-D15 peripheral, by setting bits 31,30,29,28,27,26,25,24, to "01"
 	// first, clear the bits (set them to 0);
 	*pPortDModeReg &= ~(255 << 24);
 	// second, need to set bits 25,24 to "01"
@@ -45,16 +45,16 @@ int main(void)
 	// 4. LOOP to SPIRAL the led
 	uint32_t i = 0;
 	while(1){
-		if((i % 400000 == 0)){
+		if(i % 400000 == 0){
 			*pPortDOutReg ^= (1 << 12);
 		}
-		else if((i % 400000 == 100000)){
+		else if(i % 400000 == 100000){
 			*pPortDOutReg ^= (1 << 13);
 		}
-		else if((i % 400000 == 200000)){
+		else if(i % 400000 == 200000){
 			*pPortDOutReg ^= (1 << 14);
 		}
-		else if((i % 400000 == 300000)){
+		else if(i % 400000 == 300000){
 			*pPortDOutReg ^= (1 << 15);
 		}
 		i++;

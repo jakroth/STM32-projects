@@ -1,0 +1,20 @@
+23:01:22 **** Incremental Build of configuration Debug for project 011keypad ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -o "011keypad.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Projects\STM32-projects\Embedded-C\my_workspace\target\011keypad\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="011keypad.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 011keypad.elf
+ 
+arm-none-eabi-objdump -h -S  011keypad.elf  > "011keypad.list"
+arm-none-eabi-objcopy  -O binary  011keypad.elf  "011keypad.bin"
+arm-none-eabi-size   011keypad.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5156	    108	   1580	   6844	   1abc	011keypad.elf
+Finished building: default.size.stdout
+ 
+Finished building: 011keypad.bin
+Finished building: 011keypad.list
+ 
+ 
+
+23:01:23 Build Finished. 0 errors, 0 warnings. (took 1s.269ms)
+

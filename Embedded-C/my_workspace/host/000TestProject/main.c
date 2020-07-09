@@ -5,4 +5,12 @@
  *      Author: moel
  */
 
+#include <stdio.h>
+
+int main(){
+
+	printf("a string");
+
+	return 0;
+}
 

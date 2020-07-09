@@ -21,13 +21,16 @@
 
 int main(void)
 {
-	uint32_t *pClkCtrlReg = (uint32_t*) (0x40023800 + 0x30);
+	uint32_t volatile * const pClkCtrlReg 			= (uint32_t*) (0x40023800 + 0x30);
 
-	uint32_t *pPortAModeReg = (uint32_t*) (0x40020000 + 0x00);
-	uint32_t *pPortAInReg = (uint32_t*) (0x40020000 + 0x10);
+	uint32_t volatile * const pPortAModeReg 		= (uint32_t*) (0x40020000 + 0x00);
+	// make this volatile, so compiler knows data at this address might change unexpectedly
+	// also make the data const, so the programmer knows not to set it themselves
+	// can also make the pointer const so programmer never points it to another location
+	uint32_t const volatile * const pPortAInReg 	= (uint32_t*) (0x40020000 + 0x10);
 
-	uint32_t *pPortDModeReg = (uint32_t*) (0x40020c00 + 0x00);
-	uint32_t *pPortDOutReg = (uint32_t*) (0x40020c00 + 0x14);
+	uint32_t volatile * const pPortDModeReg 		= (uint32_t*) (0x40020c00 + 0x00);
+	uint32_t volatile * const pPortDOutReg 			= (uint32_t*) (0x40020c00 + 0x14);
 
 	//1. ENABLE the CLOCK for GPIO A and GPIO D peripheral in AHB1 ENR
 	*pClkCtrlReg |= (1 << 0);
