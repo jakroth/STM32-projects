@@ -39,8 +39,8 @@ OBJCOPY_BIN += \
 all: 011keypad.elf secondary-outputs
 
 # Tool invocations
-011keypad.elf: $(OBJS) $(USER_OBJS) E:\Projects\STM32-projects\Embedded-C\my_workspace\target\011keypad\STM32F407VGTX_FLASH.ld
-	arm-none-eabi-gcc -o "011keypad.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\Projects\STM32-projects\Embedded-C\my_workspace\target\011keypad\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="011keypad.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+011keypad.elf: $(OBJS) $(USER_OBJS) D:\Projects\STM32-projects\Embedded-C\my_workspace\target\011keypad\STM32F407VGTX_FLASH.ld
+	arm-none-eabi-gcc -o "011keypad.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Projects\STM32-projects\Embedded-C\my_workspace\target\011keypad\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="011keypad.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
