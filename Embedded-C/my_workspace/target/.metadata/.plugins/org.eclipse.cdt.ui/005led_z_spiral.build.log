@@ -1,4 +1,4 @@
-22:07:29 **** Incremental Build of configuration Debug for project 005led_z_spiral ****
+15:21:56 **** Build of configuration Debug for project 005led_z_spiral ****
 make -j4 all 
 arm-none-eabi-size   005led_z_spiral.elf 
    text	   data	    bss	    dec	    hex	filename
@@ -6,5 +6,5 @@ arm-none-eabi-size   005led_z_spiral.elf
 Finished building: default.size.stdout
  
 
-22:07:30 Build Finished. 0 errors, 0 warnings. (took 813ms)
+15:21:58 Build Finished. 0 errors, 0 warnings. (took 1s.820ms)
 

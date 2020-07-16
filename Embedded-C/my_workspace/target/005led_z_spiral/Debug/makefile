@@ -39,8 +39,8 @@ OBJCOPY_BIN += \
 all: 005led_z_spiral.elf secondary-outputs
 
 # Tool invocations
-005led_z_spiral.elf: $(OBJS) $(USER_OBJS) E:\Projects\STM32-projects\Embedded-C\my_workspace\target\005led_z_spiral\STM32F407VGTX_FLASH.ld
-	arm-none-eabi-gcc -o "005led_z_spiral.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"E:\Projects\STM32-projects\Embedded-C\my_workspace\target\005led_z_spiral\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005led_z_spiral.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+005led_z_spiral.elf: $(OBJS) $(USER_OBJS) D:\Projects\STM32-projects\Embedded-C\my_workspace\target\005led_z_spiral\STM32F407VGTX_FLASH.ld
+	arm-none-eabi-gcc -o "005led_z_spiral.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\Projects\STM32-projects\Embedded-C\my_workspace\target\005led_z_spiral\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005led_z_spiral.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
