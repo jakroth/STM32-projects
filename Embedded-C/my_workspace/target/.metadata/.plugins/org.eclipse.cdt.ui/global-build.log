@@ -12,3 +12,57 @@ arm-none-eabi-size   005led_z_spiral.elf
     924	      8	   1568	   2500	    9c4	005led_z_spiral.elf
 Finished building: default.size.stdout
  
+21:25:38 **** Build of configuration Debug for project 005led_z_spiral ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "005led_z_spiral.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Projects\STM32-projects\Embedded-C\my_workspace\target\005led_z_spiral\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005led_z_spiral.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 005led_z_spiral.elf
+ 
+arm-none-eabi-objdump -h -S  005led_z_spiral.elf  > "005led_z_spiral.list"
+arm-none-eabi-objcopy  -O binary  005led_z_spiral.elf  "005led_z_spiral.bin"
+arm-none-eabi-size   005led_z_spiral.elf 
+   text	   data	    bss	    dec	    hex	filename
+    924	      8	   1568	   2500	    9c4	005led_z_spiral.elf
+Finished building: default.size.stdout
+ 
+Finished building: 005led_z_spiral.bin
+Finished building: 005led_z_spiral.list
+ 
+ 
+21:26:36 **** Build of configuration Debug for project 005led_toggle ****
+make -j4 all 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F407G_DISC1 -DSTM32F4 -DSTM32F407VGTx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "005led_toggle.elf" @"objects.list"   -mcpu=cortex-m4 -T"E:\Projects\STM32-projects\Embedded-C\my_workspace\target\005led_toggle\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="005led_toggle.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 005led_toggle.elf
+ 
+arm-none-eabi-size   005led_toggle.elf 
+arm-none-eabi-objdump -h -S  005led_toggle.elf  > "005led_toggle.list"
+arm-none-eabi-objcopy  -O binary  005led_toggle.elf  "005led_toggle.bin"
+   text	   data	    bss	    dec	    hex	filename
+    792	      8	   1568	   2368	    940	005led_toggle.elf
+Finished building: default.size.stdout
+ 
+Finished building: 005led_toggle.bin
+Finished building: 005led_toggle.list
+ 
+ 
+21:26:51 **** Incremental Build of configuration Debug for project 005led_toggle ****
+make -j4 all 
+arm-none-eabi-size   005led_toggle.elf 
+   text	   data	    bss	    dec	    hex	filename
+    792	      8	   1568	   2368	    940	005led_toggle.elf
+Finished building: default.size.stdout
+ 
+21:27:08 **** Incremental Build of configuration Debug for project 005led_z_spiral ****
+make -j4 all 
+arm-none-eabi-size   005led_z_spiral.elf 
+   text	   data	    bss	    dec	    hex	filename
+    924	      8	   1568	   2500	    9c4	005led_z_spiral.elf
+Finished building: default.size.stdout
+ 
